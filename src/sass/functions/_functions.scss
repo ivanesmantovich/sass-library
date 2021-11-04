@@ -1,0 +1,5 @@
+@function light-comp($color) {
+  $complement: complement($color); // Создаю новую переменную
+  $light-complement: lighten($complement, 1%); // Провожу с ней манипуляции
+  @return $light-complement; // Возвращаю
+}

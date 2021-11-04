@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+@use 'sass:math';
+
+.card {
+	display: inline-block;
+	padding: $base-padding;
+	border: $base-border-thickness solid rgba(1, 1, 1, 0.3);
+    border-radius: math.div($base-border-radius, 2);
+	box-shadow: $base-box-shadow;
+	background-color: rgb(40, 40, 40);
+	color: $green;
+
+	.card-title {
+		font-size: $font-size-lg;
+		padding-bottom: $base-padding;
+		font-weight: bold;
+	}
+
+	.card-body {
+		font-size: $base-font-size;
+		font-weight: thin;
+
+		a {
+			color: #0000ee;
+		}
+	}
+}

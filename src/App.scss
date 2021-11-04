@@ -1,0 +1,11 @@
+@use './sass/components' as *;
+@use './sass/abstracts' as *;
+@use './sass/functions' as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap");
+
+$roboto-mono: 'Roboto Mono' , monospace;
+
+body {
+	font-family: $roboto-mono;
+}
